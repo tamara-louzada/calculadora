@@ -14,14 +14,18 @@ public class Calculadora {
         this.val2 = val2;
     }
 
-    public List<Double> getValor() {
+    public List<Double> getValores() {
         List<Double> valoresEntradaCalculadora = new ArrayList<>();
         valoresEntradaCalculadora.add(val1);
         valoresEntradaCalculadora.add(val2);
         return valoresEntradaCalculadora;
    }
 
-    public double somar(List<Double> valoresEntradaCalculadora) {
-        return valoresEntradaCalculadora.get(0) + valoresEntradaCalculadora.get(1);
-    }
+    public double somar(List<Double> valores) {return valores.get(0) + valores.get(1);}
+
+    public double subtrair(List<Double> valores) {return valores.get(0) - valores.get(1);}
+
+    public double multiplicar(List<Double> valores) {return valores.get(0) * valores.get(1);}
+
+    public double dividir(List<Double> valores) {return valores.get(0) / valores.get(1);}
 }
